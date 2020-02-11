@@ -96,7 +96,7 @@ class BuildFastTextSelfTrained:
 
 
 if __name__ == "__main__":
-    build_fasttext = BuildFastTextSelfTrained('./')
+    build_fasttext = BuildFastTextSelfTrained('./data')
     docs = build_fasttext.get_data()
     token_corpus = build_fasttext.tokenize_sentence(docs)
     build_fasttext.build_model(token_corpus)
